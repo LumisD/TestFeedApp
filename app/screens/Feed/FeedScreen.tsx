@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { ActivityIndicator, FlatList } from "react-native";
-import { PostItem } from "../components/PostItem";
-import { Post } from "../models/Post";
+import { PostItem } from "./components/PostItem";
+import { Post } from "./models/Post";
 
 const API_URL = "https://662029f13bf790e070af2cd8.mockapi.io/api/v1/posts";
 
