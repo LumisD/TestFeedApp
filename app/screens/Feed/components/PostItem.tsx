@@ -1,8 +1,8 @@
 import moment from "moment";
 import React from "react";
 import { Image, Text, View } from "react-native";
+import { Post } from "../../../domain/models/Post";
 import { styles } from "../FeedScreen.styles";
-import { Post } from "../models/Post";
 import { FallbackImage } from "./FallbackImage";
 
 type Props = {

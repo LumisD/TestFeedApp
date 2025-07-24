@@ -37,6 +37,9 @@ export const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: borderGray,
   },
+  loadingIndicator: {
+    marginTop: 40,
+  },
   name: {
     ...Typography.header,
   },
