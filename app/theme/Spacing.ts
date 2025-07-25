@@ -6,3 +6,9 @@ export const Spacing = {
   imageHeight: 250,
   avatarSize: 40,
 };
+
+export const FontSize = {
+  small: 12,
+  medium: 16,
+  large: 20,
+};

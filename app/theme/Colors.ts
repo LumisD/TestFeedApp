@@ -1,4 +1,6 @@
+export const white = "#ffffff";
 export const black = "#000000";
+export const red = "#FF0000";
 
 export const backgroundGray = "#f0f0f0";
 export const borderGray = "#dddddd";
