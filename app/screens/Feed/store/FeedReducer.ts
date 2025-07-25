@@ -1,15 +1,5 @@
-import {
-  FeedEffect,
-  NAVIGATE_TO_COMMENTS,
-  NAVIGATE_TO_PROFILE,
-} from "./FeedEffect";
-import {
-  FeedIntent,
-  LIKE_POST,
-  PRESS_COMMENT,
-  PRESS_PROFILE,
-  SAVE_POST,
-} from "./FeedIntent";
+import { FeedEffect, NAVIGATE_TO_COMMENTS } from "./FeedEffect";
+import { FeedIntent, LIKE_POST, PRESS_COMMENT, SAVE_POST } from "./FeedIntent";
 import { FeedState } from "./FeedState";
 
 export const feedReducer = (
@@ -57,16 +47,6 @@ export const feedReducer = (
         effect: {
           type: NAVIGATE_TO_COMMENTS,
           postId: intent.postId,
-        },
-      };
-    }
-
-    case PRESS_PROFILE: {
-      return {
-        newState: state,
-        effect: {
-          type: NAVIGATE_TO_PROFILE,
-          userId: intent.userId,
         },
       };
     }
