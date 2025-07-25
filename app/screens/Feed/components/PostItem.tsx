@@ -1,5 +1,5 @@
+import { formatTimeAgo } from "@/app/utils/formatTimeAgo";
 import { FontAwesome } from "@expo/vector-icons";
-import moment from "moment";
 import React from "react";
 import { Pressable, Text, View } from "react-native";
 import { Post } from "../../../domain/models/Post";
@@ -66,7 +66,7 @@ export function PostItem({ post, onLike, onComment, onSave }: Props) {
         <Text style={styles.footerName}>{post.name}</Text>
         <Text style={styles.footerDescription}>{post.description}</Text>
         <Text style={styles.footerTimestamp}>
-          {moment(post.createdAt).fromNow()}
+          {formatTimeAgo(post.createdAt)}
         </Text>
       </View>
     </View>
