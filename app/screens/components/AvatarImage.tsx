@@ -12,6 +12,7 @@ export function AvatarImage({ uri, style }: Props) {
 
   return (
     <Image
+      testID="avatar-image"
       source={error || !uri ? fallback : { uri }}
       style={style}
       onError={() => setError(true)}
